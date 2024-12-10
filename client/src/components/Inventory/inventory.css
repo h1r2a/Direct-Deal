@@ -1,0 +1,63 @@
+.inventory {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    border-radius: 8px;
+}
+
+.react-tabs{
+
+    height: 100%;
+}
+
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: space-evenly; /* Centrer les onglets */
+ /* Espacement uniforme entre les onglets */
+    margin-bottom: 15px; /* Espacement sous les onglets */
+}
+
+.react-tabs__tab {
+    background-color: transparent; /* Fond transparent */
+    color: var(--secondary-color); /* Texte en noir */
+    padding: 6px 15px;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
+    font-weight: 500;
+    border: 2px solid transparent; /* Bordure invisible par défaut */
+
+}
+.react-tabs__tab .tab-icon {
+    font-size: 25px; /* Ajuster la taille de l'icône */
+    transition: transform 0.3s ease; /* Transition au survol */
+}
+
+.react-tabs__tab:hover {
+    background-color: var(--accent-color); /* Fond gris foncé au survol */
+    color: var(--primary-color); /* Texte blanc */
+ /* Légère agrandissement au survol */
+}
+
+.react-tabs__tab--selected {
+    background-color: var(--accent-color); /* Fond de l'onglet sélectionné */
+    color: var(--primary-color); /* Texte blanc sur l'onglet sélectionné */
+    font-weight: 600; /* Police en gras */
+    border: 2px solid var(--accent-color); /* Bordure autour de l'onglet sélectionné */
+ /* Légèrement agrandi pour l'onglet sélectionné */
+}
+
+.react-tabs__tab-panel {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre douce autour des panels */
+    margin-top: 0px; /* Espacement entre les onglets et leur contenu */
+    height: 92%;
+
+}
+
+.react-tabs__tab-panel:not(:last-child) {
+    margin-bottom: 20px; /* Espacement entre les panels */
+}

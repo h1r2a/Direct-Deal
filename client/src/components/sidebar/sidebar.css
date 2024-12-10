@@ -1,0 +1,97 @@
+.sidebar-ct {
+    background: var(--accent-color);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.345);
+    flex-direction: column;
+    color: #F0F0F0
+}
+
+.sidebar-header {
+    width: 100%;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-header h1 {
+    color: #F0F0F0
+}
+
+.sidebar-middle {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sidebar-footer {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nav:hover {
+    background-color: #333;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.nav-icon {
+    font-size: 24px;
+    color: #F0F0F0;
+    margin-right: 15px; 
+}
+
+/* Texte */
+.nav p {
+    color: #F0F0F0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.nav.active {
+    color: #4CAF50;           
+}
+
+.nav.active .nav-icon {
+    color: #4CAF50;             
+}
+
+/* Ajouter une bordure autour de l'élément actif */
+.nav.active {
+    border-left: 4px solid #4CAF50; /* Ajoute une bordure verte à gauche de l'élément */
+    padding-left: 16px;             /* Ajoute un peu d'espace pour la bordure */
+}
+
+/* Ajouter un effet d'ombre portée pour l'élément actif */
+.nav.active {
+    box-shadow: 0px 6px 8px rgba(2, 238, 147, 0.2), /* Ombre en bas */
+    0px -4px 8px rgba(2, 238, 147, 0.2);/* Ombre portée pour un effet de surbrillance */
+}
+
+.nav.disabled {
+    pointer-events: none; /* Désactive l'interaction avec l'élément */
+    opacity: 0.5;          /* Grise l'élément pour montrer qu'il est désactivé */
+}
+
+.nav.disabled:hover {
+    cursor: not-allowed;  /* Change le curseur en "non autorisé" pour plus de clarté */
+}
